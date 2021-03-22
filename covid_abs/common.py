@@ -1,5 +1,5 @@
 """
-Constants of COVID-19 diasease and wealth distribution
+Constants of COVID-19 diasease and wealth distribution a ver ahora
 """
 
 import numpy as np
