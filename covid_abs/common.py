@@ -8,6 +8,8 @@ import numpy as np
 Probability of each infection serverity by age
 
 Source: Imperial College Covid-19 research team
+
+
 """
 
 age_hospitalization_probs = [0.001, 0.003, 0.012, 0.032, 0.049, 0.102, 0.166, 0.243, 0.273]
@@ -20,8 +22,10 @@ age_death_probs = [0.002, 0.00006, 0.0003, 0.0008, 0.0015, 0.006, 0.022, 0.051, 
 Wealth distribution - Lorenz Curve
 
 By quintile, source: https://www.worldbank.org/en/topic/poverty/lac-equity-lab1/income-inequality/composition-by-quintile
+
+La curva de Lorenz ya tiene los datos de México pero faltan las series de arriba
 """
 
-lorenz_curve = [.04, .08, .13, .2, .55]
+lorenz_curve = [.05, .09, .14, .21, .51]
 share = np.min(lorenz_curve)
 basic_income = np.array(lorenz_curve) / share
