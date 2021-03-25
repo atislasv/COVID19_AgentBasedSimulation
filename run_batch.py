@@ -58,7 +58,7 @@ global_parameters = dict(
 
     # Demographic
     population_size=300,
-    homemates_avg=3,
+    homemates_avg=4,
     homeless_rate=0.0005,
     amplitudes={
         Status.Susceptible: 10,
@@ -67,10 +67,13 @@ global_parameters = dict(
     },
 
     # Epidemiological
+    
+    #Cambiamos incubación y contagio
+    
     critical_limit=0.01,
     contagion_rate=.9,
-    incubation_time=5,
-    contagion_time=10,
+    incubation_time=4,
+    contagion_time=14,
     recovering_time=20,
 
     # Economical
