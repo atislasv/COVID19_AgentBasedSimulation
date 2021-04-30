@@ -34,9 +34,13 @@ def plot_batch_results(df, health_metrics=('Susceptible', 'Infected', 'Hospitali
 
     fig, ax = plt.subplots(nrows=1, ncols=2, figsize=[20, 5])
 
-    ax[0].set_title('Average Contagion Evolution')
-    ax[0].set_xlabel("Nº of Days")
-    ax[0].set_ylabel("% of Population")
+    #ax[0].set_title('Average Contagion Evolution')
+    ax[0].set_title('Promedio Evolucion Contagio')
+    #ax[0].set_xlabel("Nº of Days")
+    ax[0].set_xlabel("Nº de días")
+    #ax[0].set_ylabel("% of Population")
+    ax[0].set_ylabel(% Poblacion)
+
 
     for col in health_metrics:
         means = df[(df["Metric"] == col)]['Avg'].values
@@ -63,9 +67,12 @@ def plot_batch_results(df, health_metrics=('Susceptible', 'Infected', 'Hospitali
         tmp = np.min(val)
         smin = np.min([smin, tmp])
 
-    ax[1].set_title('Average Economical Impact')
-    ax[1].set_xlabel("Nº of Days")
-    ax[1].set_ylabel("Wealth")
+    #ax[1].set_title('Average Economical Impact')
+    ax[1].set_title('Promedio Impacto Economico')
+    #ax[1].set_xlabel("Nº of Days")
+    ax[1].set_xlabel("Nº de Dias")
+    #ax[1].set_ylabel("Wealth")
+    ax[1].set_ylabel("Riqueza")
 
     for col in ecom_metrics:
         means = df[(df["Metric"] == col)]['Avg'].values
@@ -98,9 +105,9 @@ def plot_graph_batch_results(df, **kwargs):
                    'Hospitalization':'$S^H_t$ - Hospitalization', 'Severe':'$I^S_t$ - Severe', 
                    'Recovered_Immune':'$R_t$ - Recovered', 'Death':'$D_t$ - Death'}
 
-    ecom_legend = {'A1': '$W^{A1}_t$ - People',
-              'Business': '$W^{A3}_t$ - Business',
-              'Government': '$W^{A4}_t$ - Government',}
+    ecom_legend = {'A1': '$W^{A1}_t$ - Gente',
+              'Business': '$W^{A3}_t$ - Negocios',
+              'Government': '$W^{A4}_t$ - Gobierno',}
 
     colors = {'A1': 'purple',
               'Business': 'red',
