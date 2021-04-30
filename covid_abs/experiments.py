@@ -34,12 +34,12 @@ def plot_batch_results(df, health_metrics=('Susceptible', 'Infected', 'Hospitali
 
     fig, ax = plt.subplots(nrows=1, ncols=2, figsize=[20, 5])
 
-    #ax[0].set_title('Average Contagion Evolution')
-    ax[0].set_title('Promedio Evolucion Contagio')
-    #ax[0].set_xlabel("Nº of Days")
-    ax[0].set_xlabel("Nº de días")
-    #ax[0].set_ylabel("% of Population")
-    ax[0].set_ylabel(% Poblacion)
+    ax[0].set_title('Average Contagion Evolution')
+    #ax[0].set_title('Promedio Evolucion Contagio')
+    ax[0].set_xlabel("Nº of Days")
+    #ax[0].set_xlabel("Nº de días")
+    ax[0].set_ylabel("% of Population")
+    #ax[0].set_ylabel(% Poblacion)
 
 
     for col in health_metrics:
