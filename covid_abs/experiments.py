@@ -39,7 +39,7 @@ def plot_batch_results(df, health_metrics=('Susceptible', 'Infected', 'Hospitali
     ax[0].set_xlabel("Nº of Days")
     #ax[0].set_xlabel("Nº de días")
     ax[0].set_ylabel("% of Population")
-    #ax[0].set_ylabel(% Poblacion)
+    #ax[0].set_ylabel("% Poblacion")
 
 
     for col in health_metrics:
