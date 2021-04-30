@@ -105,9 +105,9 @@ def plot_graph_batch_results(df, **kwargs):
                    'Hospitalization':'$S^H_t$ - Hospitalization', 'Severe':'$I^S_t$ - Severe', 
                    'Recovered_Immune':'$R_t$ - Recovered', 'Death':'$D_t$ - Death'}
 
-    ecom_legend = {'A1': '$W^{A1}_t$ - Gente',
-              'Business': '$W^{A3}_t$ - Negocios',
-              'Government': '$W^{A4}_t$ - Gobierno',}
+    ecom_legend = {'A1': '$W^{A1}_t$ - Persons',
+              'Business': '$W^{A3}_t$ - Business',
+              'Government': '$W^{A4}_t$ - Government',}
 
     colors = {'A1': 'purple',
               'Business': 'red',
