@@ -267,7 +267,7 @@ class Person(Agent):
         self.incomes = kwargs.get("income", 0.0)
         self.expenses = kwargs.get("expense", 0.0)
 
-        if self.age > 16 and self.age <= 65:
+        if self.age > 15 and self.age <= 65:
             self.economical_status = EconomicalStatus.Active
 
     def is_unemployed(self):
