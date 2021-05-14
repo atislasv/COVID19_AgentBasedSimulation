@@ -19,9 +19,9 @@ class GraphSimulation(Simulation):
         self.business = []
         self.houses = []
         self.healthcare = None
-        self.homeless_rate = kwargs.get("homeless_rate", 0.01)
-        self.unemployment_rate = kwargs.get("unemployment_rate", 0.09)
-        self.homemates_avg = kwargs.get("homemates_avg", 3)
+        self.homeless_rate = kwargs.get("homeless_rate", 0.0005)
+        self.unemployment_rate = kwargs.get("unemployment_rate", 0.035)
+        self.homemates_avg = kwargs.get("homemates_avg", 3.5)
         self.homemates_std = kwargs.get("homemates_std", 1)
         self.iteration = -1
         self.callbacks = kwargs.get('callbacks', {})
